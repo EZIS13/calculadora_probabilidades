@@ -27,6 +27,7 @@ body {
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .glassy-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
@@ -88,6 +89,7 @@ section[id] {
   border-radius: 10px;
   transition: all 0.3s ease;
 }
+
 .btn-gradient:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(255,255,255,0.4);
@@ -101,8 +103,14 @@ section[id] {
   border-radius: 15px;
   padding: 10px;
 }
-@media (max-width:768px){.chart-container{height:35vh;}}
-@media (max-width:480px){.chart-container{height:30vh;}}
+
+@media (max-width:768px){
+  .chart-container {height:35vh;}
+}
+
+@media (max-width:480px){
+  .chart-container {height:30vh;}
+}
 
 .text-info {
   color: var(--color-resaltado) !important;
@@ -120,14 +128,15 @@ h1, h2, h3 {
 }
 
 @keyframes pulso {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% { text-shadow: 2px 2px 0 #000, 4px 4px 10px rgba(255,120,0,0.6); transform: scale(1);}
+  50% { text-shadow: 3px 3px 0 #000, 6px 6px 20px rgba(255,150,0,0.9); transform: scale(1.05);}
+  100% { text-shadow: 2px 2px 0 #000, 4px 4px 10px rgba(255,120,0,0.6); transform: scale(1);}
 }
 
 .fade-in {
   animation: fadeIn 1.5s ease forwards;
 }
+
 @keyframes fadeIn {
   from {opacity:0; transform: translateY(30px);}
   to {opacity:1; transform: translateY(0);}
