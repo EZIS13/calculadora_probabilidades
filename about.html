@@ -40,14 +40,17 @@
       font-weight: bold;
     }
     .video-link {
+      display: inline-block;
       color: var(--color-resaltado);
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      margin-top: 5px;
       text-shadow: 0 0 6px rgba(0,0,0,0.5);
+      transition: 0.3s ease;
     }
     .video-link:hover {
-      color: #fff;
-      text-shadow: 0 0 10px var(--color-resaltado);
+      color: #ffffff;
+      text-shadow: 0 0 12px var(--color-resaltado);
     }
   </style>
 
@@ -76,14 +79,25 @@
 
       <p>Proyecto Final: <strong>Calculadora de Distribuciones de Probabilidad</strong></p>
 
-      <p>Video explicativo:<br>
-        <a 
-          href="https://youtu.be/5TPXtQ4xjgE?si=ei0Qlv2PKGngFbIs"
-          target="_blank"
-          class="video-link">
-          ▶ Ver video en YouTube
-        </a>
-      </p>
+      <p>Video explicativo:</p>
+
+      <!-- ENLACE PRINCIPAL RECOMENDADO (100% COMPATIBLE) -->
+      <a 
+        href="https://www.youtube.com/watch?v=5TPXtQ4xjgE"
+        target="_blank"
+        class="video-link">
+        ▶ Ver video en YouTube
+      </a>
+
+      <br>
+
+      <!-- ENLACE ALTERNATIVO (EL QUE ME PASASTE TÚ) -->
+      <a 
+        href="https://youtu.be/5TPXtQ4xjgE?si=ei0Qlv2PKGngFbIs"
+        target="_blank"
+        class="video-link">
+        ▶ Enlace alternativo
+      </a>
 
     </div>
   </div>
