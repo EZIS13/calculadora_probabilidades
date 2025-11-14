@@ -29,7 +29,6 @@
       text-shadow: 2px 2px 0 #000, 4px 4px 10px rgba(255,120,0,0.6);
       animation: pulso 3s infinite ease-in-out;
       margin-bottom: 30px;
-      font-weight: 700;
     }
     @keyframes pulso {
       0% { text-shadow: 2px 2px 0 #000, 4px 4px 10px rgba(255,120,0,0.6); transform: scale(1);}
@@ -41,20 +40,16 @@
       font-weight: bold;
     }
     .video-link {
-      display: inline-block;
-      margin-top: 10px;
-      color: var(--color-resaltado);
-      font-size: 1.3rem;
+      color: #4dc4ff;
       font-weight: bold;
-      text-shadow: 0 0 6px rgba(0,0,0,0.5);
-      transition: 0.3s ease;
+      text-decoration: underline;
+      font-size: 1.1rem;
     }
     .video-link:hover {
       color: #fff;
-      text-shadow: 0 0 12px var(--color-resaltado);
+      text-shadow: 0 0 8px #4dc4ff;
     }
   </style>
-
 </head>
 
 <body class="about-bg fade-in">
@@ -67,32 +62,26 @@
 
   <div class="container">
     <div class="info-card text-light fade-in">
+      <h1 class="fw-bold">Datos del Proyecto</h1>
 
-      <h1>Datos del Proyecto</h1>
-
-      <p>
-        Estudiante:
-        <strong class="text-highlight">Berta Azucena Vicente Osorio - 0902-24-19148</strong>
-      </p>
+      <p>Estudiante: <strong class="text-highlight">Berta Azucena Vicente Osorio — 0902-24-19148</strong></p>
 
       <p>Curso: <strong>Estadística I — 2025</strong></p>
 
       <p>Proyecto Final: <strong>Calculadora de Distribuciones de Probabilidad</strong></p>
 
-      <p>Video explicativo:</p>
-
-      <a 
-        href="https://www.youtube.com/watch?v=5TPXtQ4xjgE"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="video-link">
-        ▶ Ver video en YouTube
-      </a>
+      <p>Video explicativo:  
+        <a href="https://www.youtube.com/watch?v=5TPXtQ4xjgE" 
+           class="video-link"
+           target="_blank"
+           rel="noopener noreferrer">
+           Ver video
+        </a>
+      </p>
 
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
